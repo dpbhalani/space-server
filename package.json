@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watch src/server.js",
-    "start": "PORT=7000 nodemon src/server.js"
+    "start": "PORT=5000 nodemon src/server.js"
   },
   "keywords": [],
   "author": "dbhalani",
