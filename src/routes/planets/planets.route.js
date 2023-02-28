@@ -3,10 +3,10 @@ const express = require('express');
 const planetRoutes = express.Router();
 
 const {
-    getAllPlanets,
+    httpGetAllPlanets,
 } = require('../planets/planets.contreller');
 
-planetRoutes.get('/planets', getAllPlanets);
+planetRoutes.get('/', httpGetAllPlanets);
 
 
 module.exports = planetRoutes;

@@ -5,13 +5,15 @@
   "main": "src/server.js.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon src/server.js",
-    "start": "PORT=5000 node src/server.js"
+    "watch": "watch src/server.js",
+    "start": "PORT=7000 nodemon src/server.js"
   },
+  "keywords": [],
   "author": "dbhalani",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "csv-parse": "^5.3.5",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
     "touch": "^3.1.0"
