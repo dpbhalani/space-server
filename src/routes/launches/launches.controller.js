@@ -10,7 +10,7 @@ function httpGetAllLaunches(req ,res){
 function htttpAddnewLaunch(req ,res){
     const launch = req.body;
 
-    if(!launch.mission || !launch.rocket || !launch.launchDate ||!launch.destination){
+    if(!launch.mission || !launch.rocket || !launch.launchDate ||!launch.target){
         return res.status(400).json({
             error:"misssing the your new launch detail..."
         })
