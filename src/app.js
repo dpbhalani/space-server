@@ -4,8 +4,6 @@ const path = require('path');
 
 const cors = require('cors');
 
-const morgan = require('morgan');
-
 const planetRoutes =require("../src/routes/planets/planets.route");
 const launchRoutes =require("../src/routes/launches/launches.route");
 
@@ -14,7 +12,6 @@ const app = express();
 app.use(cors({
     origin: "http://localhost:3000"
 }));
-app.use(morgan('combined'));
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '..','public')));
